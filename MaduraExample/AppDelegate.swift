@@ -41,6 +41,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
     
+    func displayIncomingCall(uuid: UUID, handle: String, hasVideo: Bool = false, completion: ((NSError?) -> Void)? = nil) {
+        maduraSdkSilvi?.incommingCall(uuid: uuid.uuidString, handle: handle)
+    }
+
+    
     private func resetMaduraSdk(){
         maduraSdkJohn = nil
         maduraSdkJohn = nil

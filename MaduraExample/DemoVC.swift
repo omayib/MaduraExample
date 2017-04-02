@@ -22,6 +22,12 @@ class DemoVC: UIViewController {
     @IBAction func calleeDidTap(_ sender: UIButton) {
         AppDelegate.shared.initMaduraSdk(isCaller: false)
         self.navigationController?.pushViewController(CalleeVC(), animated: true)
+//        let backgroundTaskIdentifier = UIApplication.shared.beginBackgroundTask(expirationHandler: nil)
+//        DispatchQueue.main.asyncAfter(wallDeadline: DispatchWallTime.now() + 5) {
+//            AppDelegate.shared.displayIncomingCall(uuid: UUID(), handle: "3123123123", hasVideo: false) { _ in
+//                UIApplication.shared.endBackgroundTask(backgroundTaskIdentifier)
+//            }
+//        }
     }
     
 

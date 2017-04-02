@@ -9,7 +9,7 @@ target 'MaduraExample' do
   use_frameworks!
 
   # Pods for MaduraExample
-  pod 'MaduraSdk'
+  pod 'MaduraSdk','0.0.10'
 
   target 'MaduraExampleTests' do
     inherit! :search_paths
