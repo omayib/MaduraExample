@@ -35,9 +35,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func initMaduraSdk(isCaller :Bool){
         resetMaduraSdk()
         if isCaller {
-            maduraSdkJohn = MaduraSdk(apiKey: "123DefaultApiKey321", userId: "123")
+            maduraSdkJohn = MaduraSdk(apiKey: "123DefaultApiKey321", userId: "123", appDisplayName: "Madura Client App")
         }else{
-            maduraSdkSilvi = MaduraSdk(apiKey: "123DefaultApiKey321", userId: "789")
+            maduraSdkSilvi = MaduraSdk(apiKey: "123DefaultApiKey321", userId: "789", appDisplayName: "Madura Client App")
         }
     }
     
